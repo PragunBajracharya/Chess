@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cfcfcf;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eeeed2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.block {
+    width: 12.5%;
+    height: 12.5%;
+    background-color: #eeeed2;
+}
+
+.hint {
+    height: 100%;
+    width: 100%;
+    background: #87ceff;
+    opacity: 0.3;
+}
+
+.selected {
+    background-color: #ffff00 !important;
+}
+
+.danger {
+    background-color: #eb6150 !important;
+}
+
+.wr, .wn, .wb, .wk, .wq, .wp,
+.br, .bn, .bb, .bk, .bq, .bp {
+    cursor: grab;
+}
+
+.wr {
+    background: url('./images/wr.png') center/contain;
+}
+
+.br {
+    background: url('./images/br.png') center/contain;
+}
+
+.wn {
+    background: url('./images/wn.png') center/contain;
+}
+
+.bn {
+    background: url('./images/bn.png') center/contain;
+}
+
+.wb {
+    background: url('./images/wb.png') center/contain;
+}
+
+.bb {
+    background: url('./images/bb.png') center/contain;
+}
+
+.wq {
+    background: url('./images/wq.png') center/contain;
+}
+
+.bq {
+    background: url('./images/bq.png') center/contain;
+}
+
+.wp {
+    background: url('./images/wp.png') center/contain;
+}
+
+.wk {
+    background: url('./images/wk.png') center/contain;
+}
+
+.bk {
+    background: url('./images/bk.png') center/contain;
+}
+
+.bp {
+    background: url('./images/bp.png') center/contain;
+}

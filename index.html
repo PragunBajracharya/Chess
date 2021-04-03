@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Chess</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./vendor/js/jquery.min.js" defer></script>
+    <script src="./js/helper.js" defer></script>
+    <script src="./js/validCheck.js" defer></script>
+    <script src="./js/availableMoves.js" defer></script>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+<main>
+    <div id="chess-board" class="container wrapper">
+        <div class="block br" data-column="1" data-row="1"></div>
+        <div class="block bn" data-column="2" data-row="1"></div>
+        <div class="block bb" data-column="3" data-row="1"></div>
+        <div class="block bq" data-column="4" data-row="1"></div>
+        <div class="block bk" data-column="5" data-row="1"></div>
+        <div class="block bb" data-column="6" data-row="1"></div>
+        <div class="block bn" data-column="7" data-row="1"></div>
+        <div class="block br" data-column="8" data-row="1"></div>
+        <div class="block bp" data-column="1" data-row="2"></div>
+        <div class="block bp" data-column="2" data-row="2"></div>
+        <div class="block bp" data-column="3" data-row="2"></div>
+        <div class="block bp" data-column="4" data-row="2"></div>
+        <div class="block bp" data-column="5" data-row="2"></div>
+        <div class="block bp" data-column="6" data-row="2"></div>
+        <div class="block bp" data-column="7" data-row="2"></div>
+        <div class="block bp" data-column="8" data-row="2"></div>
+        <div class="block" data-column="1" data-row="3"></div>
+        <div class="block" data-column="2" data-row="3"></div>
+        <div class="block" data-column="3" data-row="3"></div>
+        <div class="block" data-column="4" data-row="3"></div>
+        <div class="block" data-column="5" data-row="3"></div>
+        <div class="block" data-column="6" data-row="3"></div>
+        <div class="block" data-column="7" data-row="3"></div>
+        <div class="block" data-column="8" data-row="3"></div>
+        <div class="block" data-column="1" data-row="4"></div>
+        <div class="block" data-column="2" data-row="4"></div>
+        <div class="block" data-column="3" data-row="4"></div>
+        <div class="block" data-column="4" data-row="4"></div>
+        <div class="block" data-column="5" data-row="4"></div>
+        <div class="block" data-column="6" data-row="4"></div>
+        <div class="block" data-column="7" data-row="4"></div>
+        <div class="block" data-column="8" data-row="4"></div>
+        <div class="block" data-column="1" data-row="5"></div>
+        <div class="block" data-column="2" data-row="5"></div>
+        <div class="block" data-column="3" data-row="5"></div>
+        <div class="block" data-column="4" data-row="5"></div>
+        <div class="block" data-column="5" data-row="5"></div>
+        <div class="block" data-column="6" data-row="5"></div>
+        <div class="block" data-column="7" data-row="5"></div>
+        <div class="block" data-column="8" data-row="5"></div>
+        <div class="block" data-column="1" data-row="6"></div>
+        <div class="block" data-column="2" data-row="6"></div>
+        <div class="block" data-column="3" data-row="6"></div>
+        <div class="block" data-column="4" data-row="6"></div>
+        <div class="block" data-column="5" data-row="6"></div>
+        <div class="block" data-column="6" data-row="6"></div>
+        <div class="block" data-column="7" data-row="6"></div>
+        <div class="block" data-column="8" data-row="6"></div>
+        <div class="block wp" data-column="1" data-row="7"></div>
+        <div class="block wp" data-column="2" data-row="7"></div>
+        <div class="block wp" data-column="3" data-row="7"></div>
+        <div class="block wp" data-column="4" data-row="7"></div>
+        <div class="block wp" data-column="5" data-row="7"></div>
+        <div class="block wp" data-column="6" data-row="7"></div>
+        <div class="block wp" data-column="7" data-row="7"></div>
+        <div class="block wp" data-column="8" data-row="7"></div>
+        <div class="block wr" data-column="1" data-row="8"></div>
+        <div class="block wn" data-column="2" data-row="8"></div>
+        <div class="block wb" data-column="3" data-row="8"></div>
+        <div class="block wq" data-column="4" data-row="8"></div>
+        <div class="block wk" data-column="5" data-row="8"></div>
+        <div class="block wb" data-column="6" data-row="8"></div>
+        <div class="block wn" data-column="7" data-row="8"></div>
+        <div class="block wr" data-column="8" data-row="8"></div>
+    </div>
+</main>
+</body>
+</html>
