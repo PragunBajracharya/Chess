@@ -96,4 +96,10 @@ jQuery(document).ready(function ($) {
             $('.block').html('');
         }
     });
+    
+    $('body').on('contextmenu', function(e){
+        e.preventDefault();
+        $('.block').removeClass('selected');
+        $('.hint').remove();
+    });
 });
