@@ -93,3 +93,22 @@ body {
 .bp {
     background: url('./images/bp.png') center/contain;
 }
+
+.inverted{
+    transform: rotate(180deg);
+}
+
+.inverted .wr,
+.inverted .br,
+.inverted .bp,
+.inverted .wp,
+.inverted .wk,
+.inverted .bk,
+.inverted .bn,
+.inverted .wn,
+.inverted .wb,
+.inverted .bb,
+.inverted .wq,
+.inverted .bq {
+    transform: rotate(180deg);
+}
