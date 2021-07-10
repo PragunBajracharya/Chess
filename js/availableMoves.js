@@ -40,7 +40,7 @@ function checkAndDisplayAvailableMoves(pieceClass, div) {
                 showStraightMoves('w', currentRow, currentColumn, div, hint);
                 break;
             case 'n':
-                console.log('white knight');
+                showKnightMoves('w', div, hint);
                 break;
             case 'b':
                 showDiagonalMoves('w', currentRow, currentColumn, div, hint);
@@ -84,7 +84,7 @@ function checkAndDisplayAvailableMoves(pieceClass, div) {
                 showStraightMoves('b', currentRow, currentColumn, div, hint);
                 break;
             case 'n':
-                console.log('black knight');
+                showKnightMoves('b', div, hint);
                 break;
             case 'b':
                 showDiagonalMoves('b', currentRow, currentColumn, div, hint);
@@ -174,6 +174,20 @@ function showStraightMoves(whiteOrBlack, currentRow, currentColumn, div, hint) {
                 bottom = false;
             } else {
                 destinationBlockBottom.html(hint);
+            }
+        }
+    }
+}
+
+function showKnightMoves(whiteOrBlack, div, hint) {
+    let destinationBlock;
+    for (let i = 1; i <= 8; i++) {
+        for (let j = 1; j <= 8; j++) {
+            destinationBlock = getBlockByRowAndColumn(i, j);
+            if (isValidKnightMove(div, destinationBlock)) {
+                if (checkWhiteOrBlack($(destinationBlock)) !== whiteOrBlack) {
+                    destinationBlock.html(hint);
+                }
             }
         }
     }
